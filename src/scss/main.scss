@@ -1,6 +1,52 @@
-@use '@scss/abstracts/index' as *;
-@use '@scss/base/index' as *;
-@use '@scss/components/index' as *;
-@use '@scss/layout/index' as *;
-@use '@scss/pages/index' as *;
-@use '@scss/vendor/index' as *;
+//ABSTRACTS
+
+  //MAPS
+@use '@scss/abstracts/maps/backgrounds' as *;
+@use '@scss/abstracts/maps/breakpoints' as *;
+@use '@scss/abstracts/maps/colors' as *;
+@use '@scss/abstracts/maps/gaps' as *;
+@use '@scss/abstracts/maps/paddings' as *;
+
+  //MIXINS
+@use '@scss/abstracts/mixins/flex-center' as *;
+@use '@scss/abstracts/mixins/media' as *;
+@use '@scss/abstracts/mixins/reset' as *;
+@use '@scss/abstracts/mixins/section-bg' as *;
+@use '@scss/abstracts/mixins/typography' as *;
+
+@use '@scss/abstracts/functions' as *;
+@use '@scss/abstracts/variables' as *;
+
+//BASE
+
+@use '@scss/base/container' as *;
+@use '@scss/base/global' as *;
+@use '@scss/base/helpers' as *;
+@use '@scss/base/typography' as *;
+
+//COMPONENTS
+
+@use '@scss/components/about' as *;
+@use '@scss/components/best' as *;
+@use '@scss/components/burger-menu' as *;
+@use '@scss/components/buttons' as *;
+@use '@scss/components/call-to-action' as *;
+@use '@scss/components/card' as *;
+@use '@scss/components/hero' as *;
+@use '@scss/components/logo' as *;
+@use '@scss/components/nav' as *;
+@use '@scss/components/timer' as *;
+
+//LAYOUT
+
+@use '@scss/layout/footer' as *;
+@use '@scss/layout/header' as *;
+@use '@scss/layout/main' as *;
+
+//PAGES
+
+@use '@scss/pages/gifts' as *;
+
+//VENDOR
+
+@use '@scss/vendor/normalize.scss' as *;

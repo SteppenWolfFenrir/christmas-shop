@@ -1,15 +1,15 @@
-@mixin reset-link {
+@mixin link {
   color: inherit;
   text-decoration: none;
 }
 
-@mixin reset-link-hover {
+@mixin link-hover {
   &:hover {
     text-decoration: none;
   }
 }
 
-@mixin reset-button {
+@mixin button {
   padding: 0;
   border: none;
   background: transparent;

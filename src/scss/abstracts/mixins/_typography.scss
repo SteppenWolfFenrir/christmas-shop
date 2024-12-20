@@ -1,4 +1,4 @@
-@mixin typography-montserrat(
+@mixin montserrat(
   $font-size,
   $line-height: 0,
   $letter-spacing: 0,
@@ -6,9 +6,7 @@
   $font-weight: 600,
   $text-transform: uppercase,
   $text-align: center
-)
-
-{
+) {
   font-family: 'Montserrat', sans-serif;
   font-weight: $font-weight;
   text-transform: $text-transform;
@@ -19,7 +17,7 @@
   color: $color;
 }
 
-@mixin typography-allura($font-size, $line-height, $letter-spacing, $color: inherit, $text-align: center) {
+@mixin allura($font-size, $line-height, $letter-spacing, $color: inherit, $text-align: center) {
   font-family: 'Allura', sans-serif;
   font-weight: 400;
   font-size: $font-size;

@@ -1,21 +1,10 @@
 :root {
-  --font-family-monserrat: Montserrat, sans-serif;
 
-  --container-width: 1276px;
-
-  --section-padding-y-x: 60px 8px;
-  --section-padding-x: 8px;
-
-  --card-description-padding: 20px;
-
-  --border-radius-header: 12px;
-  --border-radius-main: 20px;
-
-  --extra-small-gap: 8px;
 }
 
-$container-padding: 60px 0 60px 0;
-$section-padding: 60px 8px 60px 8px;
+$font-family-montserrat: Montserrat, sans-serif;
 
-$color-white: #FFFFFF;
-$color-dark: #181C29;
+$container-width: 1276px;
+
+$border-radius-small: 12px;
+$border-radius-medium: 20px;
