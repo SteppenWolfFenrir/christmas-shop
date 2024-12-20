@@ -17,7 +17,13 @@
   color: $color;
 }
 
-@mixin allura($font-size, $line-height, $letter-spacing, $color: inherit, $text-align: center) {
+@mixin allura(
+  $font-size,
+  $line-height,
+  $letter-spacing,
+  $color: inherit,
+  $text-align: center
+) {
   font-family: 'Allura', sans-serif;
   font-weight: 400;
   font-size: $font-size;

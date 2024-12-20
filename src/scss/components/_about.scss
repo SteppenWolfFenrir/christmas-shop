@@ -1,37 +1,45 @@
 @use 'sass:map';
 
+@use '@scss/abstracts/maps/backgrounds' as backgrounds;
+@use '@scss/abstracts/maps/paddings' as paddings;
+@use '@scss/abstracts/maps/colors' as colors;
+@use '@scss/abstracts/maps/gaps' as gaps;
+
+@use '@scss/abstracts/variables' as variables;
+
+@use '@scss/abstracts/mixins/flex-center' as flex;
+
 .about {
-  @include flex-center();
-  padding: $section-padding;
-  background-image: map.get($backgrounds, snow);
-  background-color: map.get($colors, primary);
+  @include flex.flex-center();
+  padding: map.get(paddings.$paddings, "section");
+  background-image: map.get(backgrounds.$backgrounds, "snow");
+  background-color: map.get(colors.$colors, "primary");
 
   &__container {
-    @include flex-center();
-    border-radius: var(--border-radius-main);
-    background-color: map.get($colors, static-white);
+    @include flex.flex-center();
+    border-radius: variables.$border-radius-medium;
+    background-color: map.get(colors.$colors, "white");
   }
 
   &__info {
-    @include flex-center(column, $align: flex-start);
-    width: 518px;
-    padding: 0 60px 0 60px;
-    color: map.get($colors, color-dark);
+    @include flex.flex-center(column, $align: flex-start);
+    padding: map.get(paddings.$paddings, "container-invert");
+    color: map.get(colors.$colors, "dark");
 
     .info {
       &__description {
-        @include flex-center(column, $align: flex-start);
-        width: 426px;
+        @include flex.flex-center(column, $align: flex-start);
 
-        padding: $container-padding;
-        gap: map-get($gaps, medium);
+        padding: map.get(paddings.$paddings, "container");
+        gap: map.get(gaps.$gaps, "medium");
       }
 
       &__caption {
-        color: var(--color-primary);
+        color: map.get(colors.$colors, "primary");
       }
 
-      &__title, &__text {
+      &__title,
+      &__text {
         text-align: left;
       }
     }
@@ -44,6 +52,6 @@
   &__image {
     object-fit: cover;
     object-position: center;
-    border-radius: var(--border-radius-main);
+    border-radius: variables.$border-radius-medium;
   }
 }

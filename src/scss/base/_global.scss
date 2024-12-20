@@ -1,6 +1,6 @@
 @use '@scss/abstracts/mixins/typography' as typography;
 @use '@scss/abstracts/mixins/reset' as reset;
-
+@use '@scss/abstracts/maps/colors' as colors;
 
 * {
   margin: 0;
@@ -14,8 +14,8 @@ html {
 body {
   max-width: 1440px;
   margin-inline: auto;
-  font-family: 'Montserrat', sans-serif;
-  background-color: var(--color-static-white);
+  font-family: "Montserrat", sans-serif;
+  background-color: colors.$colors["white"];
 }
 
 h1 {
@@ -35,7 +35,7 @@ h4 {
 }
 
 p {
-  @include typography.montserrat(16px, 148%, $font-weight: 400, $text-transform: none);
+  @include typography.montserrat(16px, 148%, );
 }
 
 a {
