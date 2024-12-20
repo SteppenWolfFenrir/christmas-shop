@@ -1,0 +1,50 @@
+@use '@scss/abstracts/index' as *;
+
+.card {
+  border-radius: var(--border-radius-main);
+  color: var(--color-dark);
+  background-color: var(--color-card-bg);
+
+  h3 {
+    transition: color 0.2s;
+  }
+
+  @include hover {
+
+    h3 {
+      color: var(--color-primary);
+    }
+  }
+
+  &__image {
+    width: 310px;
+    height: 230px;
+  }
+
+  &__info {
+    @include flex-center(column, $justify: normal, $align: flex-start) {
+      gap: 8px;
+    }
+
+    height: 72px;
+
+    padding: var(--card-description-padding);
+    border-radius: var(--border-radius-main);
+
+    background-color: var(--color-static-white);
+  }
+
+  &__tag {
+    &--tag-work {
+      color: var(--color-tag-purple);
+    }
+
+    &--tag-health {
+      color: var(--color-tag-green);
+    }
+
+    &--tag-harmony {
+      color: var(--color-tag-pink);
+    }
+  }
+}

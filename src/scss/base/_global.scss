@@ -1,0 +1,57 @@
+@use '@scss/abstracts/index' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1440px;
+  margin-inline: auto;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--color-static-white);
+}
+
+h1 {
+  @include typography-montserrat(32px, 150%, 5.76px, $color-white);
+}
+
+h2 {
+  @include typography-montserrat(24px, 152%, 3.84px);
+}
+
+h3 {
+  @include typography-montserrat(16px, 152%, 1.28px, $color-dark, $text-align: left);
+}
+
+h4 {
+  @include typography-montserrat(12px, 130%, 0.6px);
+}
+
+p {
+  @include typography-montserrat(16px, 148%, $font-weight: 400, $text-transform: none);
+}
+
+a {
+  @include reset-link();
+  @include reset-link-hover();
+  transition: color 0.2s, background-color 0.2s;
+}
+
+button {
+  @include reset-button();
+  cursor: pointer;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+li {
+  list-style: none;
+}
+
+svg path {
+  stroke: currentColor;
+}

@@ -1,0 +1,78 @@
+@use 'sass:map';
+@use '@scss/abstracts/index' as *;
+
+.footer {
+  @include flex-center();
+  padding: $section-padding;
+
+  color: $color-dark;
+  background-color: var(--color-static-white);
+
+  &__container {
+    @include flex-center(column) {
+      gap: map.get($gaps, large);
+    }
+    width: 1276px;
+  }
+
+  &__cards{
+    @include flex-center() {
+      gap: map.get($gaps, small);
+    }
+    width: 100%;
+  }
+
+  &__call {
+    @include flex-center(column) {
+      gap: map-get($gaps, small);;
+    }
+    padding: var(--card-description-padding);
+    border-radius: var(--border-radius-main);
+    background-color: var(--color-card-bg);
+    width: 100%;
+    transition: color 0.2s;
+
+    h3 {
+      transition: color 0.2s;
+    }
+
+    @include hover {
+      color: var(--color-primary);
+
+      h3 {
+        color: var(--color-primary);
+      }
+    }
+  }
+
+  &__link {
+    @include flex-center();
+    width: 100%;
+  }
+
+  &__social {
+    @include flex-center(column) {
+      gap: map-get($gaps, small);;
+    }
+  }
+
+  &__icon {
+    @include flex-center();
+    padding: 8px;
+
+    @include hover {
+      color: var(--color-primary);
+    }
+  }
+  &__links {
+    @include flex-center() {
+      gap: map.get($gaps, small);
+    }
+  }
+
+  &__school-link {
+    @include hover {
+      color: var(--color-primary);
+    }
+  }
+}

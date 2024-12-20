@@ -1,0 +1,18 @@
+@use '@scss/abstracts/index' as *;
+
+.burger-menu {
+  @include flex-center(column);
+
+  &__button {
+    @include flex-center(column) {
+      gap: var(--extra-small-gap);
+    }
+    width: 40px;
+    height: 40px;
+  }
+
+  &__line {
+    @include flex-center(column);
+    color: var(--color-dark);
+  }
+}

@@ -1,0 +1,63 @@
+@use '@scss/base/index' as *;
+@use '@scss/abstracts/index' as *;
+
+
+.button {
+  @include flex-center();
+
+  &--primary {
+    @extend .action-small;
+    padding: 20px 32px 20px 32px;
+
+    border-radius: 20px;
+    background-color: var(--color-dark);
+    color: var(--color-static-white);
+
+    @include hover {
+      background-color: var(--color-static-white);
+      color: var(--color-dark);
+    }
+  }
+
+  &--arrow {
+    width: 56px;
+    height: 56px;
+
+    border-radius: 20px;
+    color: var(--color-static-white);
+    border: 1px var(--color-static-white) solid;
+
+    @include hover {
+      background-color: var(--color-static-white);
+      color: var(--color-primary);
+    }
+
+    &--low-opacity {
+      opacity: 0.4;
+    }
+
+    &--disabled {
+      pointer-events: none;
+    }
+  }
+
+  &--tab {
+    @extend .action-small;
+    padding: 12px 20px 12px 20px;
+
+    border-radius: var(--border-radius-header);
+
+    @include hover {
+      background-color: var(--color-static-white-20);
+    }
+
+    &--active {
+      background-color: var(--color-static-white-20);
+    }
+
+    &--disabled {
+      pointer-events: none;
+    }
+  }
+}
+

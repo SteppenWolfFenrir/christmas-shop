@@ -1,0 +1,30 @@
+@use '@scss/abstracts/index' as *;
+
+.hero {
+  @include flex-center();
+  padding: $section-padding;
+
+  background-color: var(--color-primary);
+  border-top-left-radius: var(--border-radius-main);
+  border-top-right-radius: var(--border-radius-main);
+
+  @include section-bg-dual(
+    $primary-image: map-get($backgrounds, snow),
+    $secondary-image: map-get($backgrounds, ball),
+    $primary-size: cover,
+    $secondary-size: cover,
+    $primary-position: center,
+    $secondary-position: center);
+
+  &__container {
+    @include flex-center($direction: column, $justify: space-between) {
+      gap: map-get($gaps, small);
+    }
+    width: 426px;
+    padding: $container-padding;
+  }
+
+  &__text {
+    color: var(--color-static-white);
+  }
+}

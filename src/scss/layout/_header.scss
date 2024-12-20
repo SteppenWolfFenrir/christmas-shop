@@ -1,0 +1,13 @@
+@use 'sass:map';
+
+.header {
+  padding-inline: var(--section-padding-x);
+
+  &__container {
+    @include flex-center($justify: space-between) {
+      gap: map.get($gaps, small);
+    }
+    width: 100%;
+    padding: 12px 0;
+  }
+}

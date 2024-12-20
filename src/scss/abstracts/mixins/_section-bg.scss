@@ -1,0 +1,20 @@
+@mixin section-bg($image, $size: cover, $position: center) {
+  background-image: $image;
+  background-size: $size;
+  background-position: $position;
+  background-repeat: no-repeat;
+}
+
+@mixin section-bg-dual(
+  $primary-image,
+  $secondary-image,
+  $primary-size: cover,
+  $secondary-size: cover,
+  $primary-position: center,
+  $secondary-position: center,
+) {
+  background-image: $primary-image, $secondary-image;
+  background-size: $primary-size, $secondary-size;
+  background-position: $primary-position, $secondary-position;
+  background-repeat: no-repeat;
+}

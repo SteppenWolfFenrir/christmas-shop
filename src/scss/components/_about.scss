@@ -1,0 +1,50 @@
+@use 'sass:map';
+@use '@scss/abstracts/index' as *;
+
+.about {
+  @include flex-center();
+  padding: $section-padding;
+  background-image: map.get($backgrounds, snow);
+  background-color: map.get($colors, primary);
+
+  &__container {
+    @include flex-center();
+    border-radius: var(--border-radius-main);
+    background-color: map.get($colors, static-white);
+  }
+
+  &__info {
+    @include flex-center(column, $align: flex-start);
+    width: 518px;
+    padding: 0 60px 0 60px;
+    color: map.get($colors, color-dark);
+
+    .info {
+      &__description {
+        @include flex-center(column, $align: flex-start);
+        width: 426px;
+
+        padding: $container-padding;
+        gap: map-get($gaps, medium);
+      }
+
+      &__caption {
+        color: var(--color-primary);
+      }
+
+      &__title, &__text {
+        text-align: left;
+      }
+    }
+  }
+
+  &__picture {
+    height: 528px;
+  }
+
+  &__image {
+    object-fit: cover;
+    object-position: center;
+    border-radius: var(--border-radius-main);
+  }
+}

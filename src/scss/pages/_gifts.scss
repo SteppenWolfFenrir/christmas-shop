@@ -1,0 +1,37 @@
+@use '@scss/abstracts/index' as *;
+
+.gifts {
+  @include flex-center();
+  @include section-bg(map-get($backgrounds, garland), contain, top);
+
+  padding: $section-padding;
+  border-radius: var(--border-radius-main);
+
+  background-color: var(--color-primary);
+
+  &__container {
+    @include flex-center(column) {
+      gap: 20px;
+    }
+  }
+
+  &__title {
+    width: 426px;
+  }
+
+  &__tabs {
+    @include flex-center() {
+    gap: map-get($gaps, extra-small);
+    }
+    color: var(--color-static-white);
+  }
+
+  &__list {
+    max-width: 1276px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: map-get($gaps, small);
+    row-gap: map-get($gaps, small);
+  }
+}

@@ -1,0 +1,32 @@
+@use '@scss/abstracts/index' as *;
+
+.best {
+  @include flex-center(column);
+  background-image: map-get($backgrounds, snow);
+
+  padding: $section-padding;
+
+  background-color: var(--color-primary);
+
+  &__container {
+    @include flex-center(column) {
+      gap: map-get($gaps, medium);
+    }
+    width: 1276px;
+  }
+
+  &__description {
+    @include flex-center(column) {
+      gap: map-get($gaps, small);;
+    }
+    width: 426px;
+
+    color: var(--color-static-white);
+  }
+
+  &__list {
+    @include flex-center() {
+      column-gap: map-get($gaps, small);;
+    };
+  }
+}

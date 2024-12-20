@@ -1,0 +1,38 @@
+@use '@scss/abstracts/index' as *;
+
+.call-to-action {
+  @include flex-center();
+  @include section-bg-dual(
+          $primary-image: map-get($backgrounds, forest),
+          $secondary-image: map-get($backgrounds, snow),
+          $primary-size: cover,
+          $secondary-size: cover,
+          $primary-position: center,
+          $secondary-position: center);
+  border: none;
+
+  padding: $section-padding;
+
+  border-bottom-left-radius: var(--border-radius-main);
+  border-bottom-right-radius: var(--border-radius-main);
+  background-color: var(--color-primary);
+
+  &__container {
+    @include flex-center();
+    width: 1276px;
+    padding: $container-padding;
+  }
+
+  &__content {
+    @include flex-center($direction: column, $justify: space-between) {
+      gap: map-get($gaps, medium);
+    }
+    width: 426px;
+
+    padding: $container-padding;
+  }
+
+  &__title {
+    color: var(--color-static-white);
+  }
+}

@@ -1,0 +1,41 @@
+@use '@scss/abstracts/index' as *;
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('@fonts/Montserrat-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('@fonts/Montserrat-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Allura';
+  src: url('@fonts/Allura-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.action-large {
+  @include typography-montserrat(24px, 36.48px, 3.84px);
+}
+
+.action-small {
+  @include typography-montserrat(12px, 15.6px, 0.6px);
+}
+
+.caption {
+  @include typography-allura(24px, 24px, 1.2px);
+}
+
+.slider-text {
+  @include typography-montserrat(80px)
+}

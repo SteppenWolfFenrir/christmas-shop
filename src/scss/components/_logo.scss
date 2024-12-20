@@ -1,0 +1,15 @@
+@use '@scss/abstracts/index' as *;
+
+.logo {
+  color: var(--color-dark);
+  border-radius: var(--border-radius-header);
+
+  &__link {
+    @include flex-center() {
+      gap: 8px;
+    }
+
+    border-radius: var(--border-radius-header);
+    padding: 8px 20px 8px 20px;
+  }
+}

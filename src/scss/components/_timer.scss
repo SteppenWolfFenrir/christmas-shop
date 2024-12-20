@@ -1,0 +1,34 @@
+@use '@scss/abstracts/index' as *;
+
+.timer {
+  &__container {
+    @include flex-center(column) {
+      gap: map-get($gaps, extra-small);
+    }
+    color: var(--color-static-white);
+  }
+
+  &__counter {
+    @include flex-center($justify: space-between);
+    width: 320px;
+    padding: 8px 12px 12px 12px;
+
+    border-radius: var(--border-radius-main);
+    background-color: var(--color-static-white-40);
+  }
+
+  &__days,
+  &__hours,
+  &__minutes,
+  &__seconds {
+    @include flex-center(column);
+    width: 80px;
+  }
+
+  &__separator {
+    @include flex-center();
+    width: 20px;
+
+    color: var(--color-static-white-40);
+  }
+}

@@ -1,0 +1,48 @@
+@use '@scss/abstracts/index' as *;
+
+.slider {
+  @include flex-center(column);
+  background-image: map-get($backgrounds, snow);
+  padding: $section-padding;
+
+  background-color: var(--color-primary);
+
+  &__container {
+    @include flex-center(column) {
+      gap: map-get($gaps, medium);
+    }
+  }
+
+  &__description {
+    @include flex-center(column) {
+      gap:map-get($gaps, medium);
+    }
+    width: 426px;
+
+    color: var(--color-static-white);
+  }
+
+  &__carousel {
+    @include flex-center() {
+      column-gap: map-get($gaps, medium);
+    }
+
+    color: var(--color-static-white);
+
+    .slider__image {
+      width: 200px;
+      border-radius: var(--border-radius-main);
+    }
+  }
+
+  &__row {
+    max-width: 1440px;
+    margin-inline: auto;
+  }
+
+  &__arrows {
+    @include flex-center($justify: flex-end);
+    width: 1276px;
+    column-gap: map-get($gaps, medium);;
+  }
+}

@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="/favicon/christmas-tree.png" type="image/png">
+  <title>Christmas Shop</title>
+</head>
+<body>
+<header class="header">
+  <div class="header__container container">
+    <div class="header__logo logo">
+      <a class="logo__link" href="./index.html">
+        <img class="logo__image"
+             src="../assets/svg/logo/logo.svg"
+             width="24"
+             height="24"
+             alt="Logo"
+             loading="lazy"
+        >
+        <p class="logo__text action-small">
+          The Gifts
+        </p>
+      </a>
+    </div>
+    <nav class="nav mobile-hidden">
+      <ul class="nav__list action-small">
+        <li class="nav__item">
+          <a class="nav__link" href="./gifts.html">
+            Gifts
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#about">
+            About
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#best">
+            Best
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#contacts">
+            Contacts
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="burger-menu desktop-hidden">
+      <button class="burger-menu__button" type="button">
+        <span class="visually-hidden">Open navigation menu</span>
+        <span class="burger-menu__line">
+          <svg width="22" height="2" viewBox="0 0 22 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path id="Vector" d="M1 1H21" stroke="#181C29" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="burger-menu__line">
+          <svg width="22" height="2" viewBox="0 0 22 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path id="Vector" d="M1 1H21" stroke="#181C29" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+</header>
+<main class="main">
+  <section class="main__hero hero">
+    <div class="hero__container container">
+      <p class="hero__text caption">Merry Christmas</p>
+      <h1 class="hero__title">
+        Gift yourself
+        The&nbsp;Magic&nbsp;Of&nbsp;New
+        possibilities
+      </h1>
+      <a class="hero__button button button--primary"
+         href="./gifts.html">
+        Explore Magical Gifts
+      </a>
+      <p class="hero__text caption">and Happy New Year</p>
+    </div>
+  </section>
+  <section id="about" class="main__about about">
+    <div class="about__container container">
+      <div class="about__info info">
+        <div class="info__description">
+          <p class="info__caption caption">About</p>
+          <h2 class="info__title">Unleash your inner superhero!</h2>
+          <p class="info__text">
+            This New Year marks the beginning of your journey to inner harmony and new strengths.
+            We offer unique gifts that will help you improve your life.
+          </p>
+        </div>
+      </div>
+      <div class="about__picture">
+        <img class="about__image"
+             src="/src/assets/images/about/santa.png"
+             width="638"
+             height="528"
+             alt="About"
+             loading="lazy"
+        >
+      </div>
+    </div>
+  </section>
+  <section class="main__slider slider">
+    <div class="slider__container container">
+      <div class="slider__description">
+        <p class="slider__caption caption">Become Happier!</p>
+        <h2 class="slider__title">in the new 2025</h2>
+      </div>
+      <div class="slider__row">
+        <ul class="slider__carousel slider-text">
+          <li class="slider__slide">
+            Live
+          </li>
+          <li class="slider__slide">
+            <img class="slider__image"
+                 src="../assets/images/slides/snowman.png"
+                 alt="">
+          </li>
+          <li class="slider__slide">
+            Create
+          </li>
+          <li class="slider__slide">
+            <img class="slider__image"
+                 src="../assets/images/slides/christmas-trees.png"
+                 alt="">
+          </li>
+          <li class="slider__slide">
+            Love
+          </li>
+          <li class="slider__slide">
+            <img class="slider__image"
+                 src="../assets/images/slides/christmas-tree-ball.png"
+                 alt="">
+          </li>
+          <li class="slider__slide visually-hidden">
+            Dream
+          </li>
+          <li class="slider__slide visually-hidden">
+            <img class="slider__image"
+                 src="../assets/images/slides/fairytale-house.png"
+                 alt="">
+          </li>
+        </ul>
+      </div>
+      <div class="slider__arrows">
+        <button class="slider__arrow button button--arrow button--arrow--low-opacity button--arrow--disabled">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <g id="left-arrow">
+              <path id="arrow-left" d="M18.5 12H6M6 12L12 6M6 12L12 18" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+          </svg>
+        </button>
+        <button class="slider__arrow button button--arrow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <g id="right-arrow">
+              <path id="arrow-right" d="M6 12H18.5M18.5 12L12.5 6M18.5 12L12.5 18" stroke-linecap="round"
+                    stroke-linejoin="round"/>
+            </g>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section id="best" class="main__best best">
+    <div class="best__container container">
+      <div class="best__description">
+        <p class="best__caption caption">Best Gifts</p>
+        <h2 class="best__title">Especially for you</h2>
+      </div>
+      <ul class="best__list">
+        <li class="best__item card">
+          <a href="#">
+            <div class="card__image">
+              <img src="../assets/images/gifts/gift-for-work.png"
+                   width="310"
+                   height="230"
+                   alt=""
+                   loading="lazy"
+              >
+            </div>
+            <div class="card__info">
+              <div class="card__tag card__tag--tag-work">
+                <h4>For work</h4>
+              </div>
+              <div class="card__description">
+                <h3>Console.log Guru</h3>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="best__item card">
+          <a href="#">
+            <div class="card__image">
+              <img src="../assets/images/gifts/gift-for-health.png"
+                   width="310"
+                   height="230"
+                   alt=""
+                   loading="lazy"
+              >
+            </div>
+            <div class="card__info">
+              <div class="card__tag card__tag--tag-health">
+                <h4>For Health</h4>
+              </div>
+              <div class="card__description">
+                <h3>Hydration Bot</h3>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="best__item card">
+          <a href="#">
+            <div class="card__image">
+              <img src="../assets/images/gifts/gift-for-work.png"
+                   width="310"
+                   height="230"
+                   alt=""
+                   loading="lazy"
+              >
+            </div>
+            <div class="card__info">
+              <div class="card__tag card__tag--tag-work">
+                <h4>For work</h4>
+              </div>
+              <div class="card__description">
+                <h3>Merge Master</h3>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="best__item card">
+          <a href="#">
+            <div class="card__image">
+              <img src="../assets/images/gifts/gift-for-harmony.png"
+                   width="310"
+                   height="230"
+                   alt=""
+                   loading="lazy"
+              >
+            </div>
+            <div class="card__info">
+              <div class="card__tag card__tag--tag-harmony">
+                <h4>For harmony</h4>
+              </div>
+              <div class="card__description">
+                <h3>Spontaneous Coding Philosopher</h3>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="main__call-to-action call-to-action">
+    <div class="call-to-action__container container">
+      <div class="call-to-action__content">
+        <h2 class="call-to-action__title">
+          Ready to start your
+          journey to a better
+          version of yourself?
+        </h2>
+        <a class="call-to-action__button button button--primary"
+           href="./gifts.html">
+          Explore Magical Gifts
+        </a>
+        <div class="call-to-action__timer timer">
+          <div class="timer__container">
+            <div class="timer__title">
+              <p class="timer__text caption">The New Year is Coming Soon...</p>
+            </div>
+            <div class="timer__counter">
+              <div class="timer__days">
+                <h2 class="timer__value" id="days">47</h2>
+                <h4 class="timer__label">Days</h4>
+              </div>
+              <span class="timer__separator">|</span>
+              <div class="timer__hours">
+                <h2 class="timer__value" id="hours">5</h2>
+                <h4 class="timer__label">Hours</h4>
+              </div>
+              <span class="timer__separator">|</span>
+              <div class="timer__minutes">
+                <h2 class="timer__value" id="minutes">34</h2>
+                <h4 class="timer__label">Minutes</h4>
+              </div>
+              <span class="timer__separator">|</span>
+              <div class="timer__seconds">
+                <h2 class="timer__value" id="seconds">12</h2>
+                <h4 class="timer__label">Seconds</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer id="contacts" class="footer">
+  <div class="footer__container container">
+    <div class="footer__cards">
+      <a class="footer__link" href="tel:+375(29)111-22-33">
+        <div class="footer__call">
+          <img class="footer__image"
+               src="../assets/svg/icons/footer-icons/santa-claus.svg"
+               width="80"
+               height="80"
+               alt=""
+          >
+          <p class="footer__number action-large">+375 (29) 111-22-33</p>
+          <h3 class="footer__title">Call Us</h3>
+        </div>
+      </a>
+      <a class="footer__link"
+         href="https://www.google.com/maps/place/Lys%C3%A1+hora/@49.5414554,18.4059989,12.54z/data=!4m14!1m7!3m6!1s0x47140b3c1fc740f1:0x3caf7333dba4f60d!2sWestern+Beskids!8m2!3d49.5446568!4d18.4419271!16s%2Fm%2F0h1d7nd!3m5!1s0x47140b1501ff2c93:0xc2f953c2292f44c5!8m2!3d49.5458333!4d18.4486111!16zL20vMDluMF9q?entry=ttu&g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D"
+         target="_blank">
+        <div class="footer__call">
+          <img class="footer__image"
+               src="../assets/svg/icons/footer-icons/christmas-tree.svg"
+               width="80"
+               height="80"
+               alt=""
+          >
+          <p class="footer__number action-large">Magic forest</p>
+          <h3 class="footer__title">Meet us</h3>
+        </div>
+      </a>
+      <a class="footer__link" href="mailto:gifts@magic.com">
+        <div class="footer__call">
+          <img class="footer__image"
+               src="../assets/svg/icons/footer-icons/snake.svg"
+               width="80"
+               height="80"
+               alt=""
+          >
+          <p class="footer__number action-large">gifts@magic.com</p>
+          <h3 class="footer__title">Write us</h3>
+        </div>
+      </a>
+    </div>
+    <div class="footer__social">
+      <div class="footer__links">
+        <a class="footer__icon" href="#">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 5L2 12.5L9 13.5M21 5L18.5 20L9 13.5M21 5L9 13.5M9 13.5V19L12.2488 15.7229" stroke="#181C29"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a class="footer__icon" href="#">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z"
+                stroke="#181C29" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a class="footer__icon" href="#">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                stroke="#181C29" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path
+                d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16Z"
+                stroke="#181C29" stroke-width="1.5"/>
+            <path d="M17.5 6.51L17.51 6.49889" stroke="#181C29" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a class="footer__icon" href="#">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M16.8198 20.7684L3.75317 3.96836C3.44664 3.57425 3.72749 3 4.22678 3H6.70655C6.8917 3 7.06649 3.08548 7.18016 3.23164L20.2468 20.0316C20.5534 20.4258 20.2725 21 19.7732 21H17.2935C17.1083 21 16.9335 20.9145 16.8198 20.7684Z"
+                stroke="#181C29" stroke-width="1.5"/>
+            <path d="M20 3L4 21" stroke="#181C29" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </a>
+      </div>
+      <div class="footer__copyright">
+        <p class="footer__text">© Copyright 2025, All Rights Reserved</p>
+      </div>
+      <div class="footer__school">
+        <a class="footer__school-link caption" href="https://rs.school/" target="_blank">
+          Made in Rolling Scopes School
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
