@@ -1,5 +1,4 @@
 @use 'sass:map';
-@use '@scss/abstracts/index' as *;
 
 .footer {
   @include flex-center();

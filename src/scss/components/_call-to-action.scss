@@ -1,5 +1,3 @@
-@use '@scss/abstracts/index' as *;
-
 .call-to-action {
   @include flex-center();
   @include section-bg-dual(

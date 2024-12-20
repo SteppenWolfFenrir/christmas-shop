@@ -1,5 +1,3 @@
-@use '@scss/abstracts/index' as *;
-
 .best {
   @include flex-center(column);
   background-image: map-get($backgrounds, snow);

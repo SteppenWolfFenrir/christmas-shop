@@ -1,5 +1,3 @@
-@use '@scss/abstracts/index' as *;
-
 .timer {
   &__container {
     @include flex-center(column) {

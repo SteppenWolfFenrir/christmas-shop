@@ -1,5 +1,3 @@
-@use '@scss/abstracts/index' as *;
-
 .gifts {
   @include flex-center();
   @include section-bg(map-get($backgrounds, garland), contain, top);

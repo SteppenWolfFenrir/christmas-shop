@@ -1,5 +1,3 @@
-@use '@scss/abstracts/index' as *;
-
 .hero {
   @include flex-center();
   padding: $section-padding;

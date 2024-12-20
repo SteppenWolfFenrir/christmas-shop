@@ -1,4 +1,6 @@
-@use '@scss/abstracts/index' as *;
+@use '@scss/abstracts/mixins/typography' as typography;
+@use '@scss/abstracts/mixins/reset' as reset;
+@use '@scss/abstracts/maps/colors' as colors;
 
 * {
   margin: 0;
@@ -12,38 +14,38 @@ html {
 body {
   max-width: 1440px;
   margin-inline: auto;
-  font-family: 'Montserrat', sans-serif;
-  background-color: var(--color-static-white);
+  font-family: "Montserrat", sans-serif;
+  background-color: colors.$colors["white"];
 }
 
 h1 {
-  @include typography-montserrat(32px, 150%, 5.76px, $color-white);
+  @include typography.montserrat(32px, 150%, 5.76px);
 }
 
 h2 {
-  @include typography-montserrat(24px, 152%, 3.84px);
+  @include typography.montserrat(24px, 152%, 3.84px);
 }
 
 h3 {
-  @include typography-montserrat(16px, 152%, 1.28px, $color-dark, $text-align: left);
+  @include typography.montserrat(16px, 152%, 1.28px);
 }
 
 h4 {
-  @include typography-montserrat(12px, 130%, 0.6px);
+  @include typography.montserrat(12px, 130%, 0.6px);
 }
 
 p {
-  @include typography-montserrat(16px, 148%, $font-weight: 400, $text-transform: none);
+  @include typography.montserrat(16px, 148%, );
 }
 
 a {
-  @include reset-link();
-  @include reset-link-hover();
+  @include reset.link();
+  @include reset.link-hover();
   transition: color 0.2s, background-color 0.2s;
 }
 
 button {
-  @include reset-button();
+  @include reset.button();
   cursor: pointer;
   transition: color 0.2s, background-color 0.2s;
 }
